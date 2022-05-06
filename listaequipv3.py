@@ -1,9 +1,10 @@
-from operator import inv
 from funcoes import *
 
 inventario = [
-    ["Impressora", 349.99, 1111, "ENG"], ["Scanner", 147.59, 2222, "ENG"],
-    ["Notebook01", 4389.79, 1234, "TI"], ["Notebook02", 4389.79, 1235, "TI"]
+    ["Impressora", 349.99, 1111, "ENG"],
+    ["Scanner", 147.59, 2222, "ENG"],
+    ["Notebook01", 4389.79, 1234, "TI"],
+    ["Notebook02", 4389.79, 1235, "TI"]
 ]
 valores = []
 

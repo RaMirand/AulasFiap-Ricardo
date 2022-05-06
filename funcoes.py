@@ -29,3 +29,20 @@ def excluir(lista):
 
 # def informacoes(lista):
 #     #
+
+
+def menu():
+    return input("<I> - Para inserir um equipamento\n" +
+                 "<P> - Para pesquisar um equipamento\n" +
+                 "<E> - Para excluir um equipamento\n" +
+                 "<L> - Para listar os equipamentos\n" +
+                 "O que deseja realizar?: ").upper()
+
+
+def inserir(dicionario):
+    dicionario[input("Digite o ID: ")] = [input("Digite o nome do equipamento: ").upper(),
+                                          float(
+                                              input("Digite o valor do equipamento: ")),
+                                          input(
+                                              "Digite o número de serial do equipamento: "),
+                                          input("Digite o departamento responsável: ").upper()]
