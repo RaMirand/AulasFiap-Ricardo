@@ -1,7 +1,3 @@
-from platform import processor
-from re import I
-
-
 equipamentos = []
 valores = []
 seriais = []
