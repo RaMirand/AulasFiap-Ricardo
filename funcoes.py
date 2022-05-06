@@ -15,4 +15,5 @@ def depreciar(lista):
         if depreciacao == elemento[0]:
             print("Valor antigo: ", elemento[1])
             elemento[1] = elemento[1] * (1-porc/100)
+            elemento[1] = "{:.2f}".format(elemento[1])
             print("Novo valor: ", elemento[1])

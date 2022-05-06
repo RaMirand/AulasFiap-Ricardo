@@ -21,6 +21,4 @@ if len(valores) > 0:
     print("O valor total em equipamentos em estoque é de R${}".format(sum(valores)))
 
 busca(inventario)
-
-depre = 10
-depreciar(inventario, depre)
+depreciar(inventario)
