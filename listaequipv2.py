@@ -1,3 +1,7 @@
+from operator import eq
+from re import I
+
+
 equipamentos = []
 valores = []
 seriais = []
@@ -26,8 +30,6 @@ for indice in range(0, len(equipamentos)):
         print("Valor........: ", valores[indice])
         print("Serial.......: ", seriais[indice])
         print("Departamento.: ", departamentos[indice])
-    else:
-        print("Não foi encontrado nenhum equipamento com este nome!")
 
 depreciacao = input("Digite o nome do equipamento a ser depreciado: ")
 porc = float(input("Qual a porcetagem de depreciação?: "))
@@ -36,5 +38,18 @@ for indice in range(0, len(equipamentos)):
         print("Valor antigo: ", valores[indice])
         valores[indice] = valores[indice] * (1-porc/100)
         print("Valor novo: ", valores[indice])
-    else:
-        print("Não foi encontrado nenhum equipamento com este nome!")
+
+deletar = input("Digite o serial do equipamento a ser deletado: ")
+for indice in range(0, len(equipamentos)):
+    if deletar == seriais[indice]:
+        del equipamentos[indice]
+        del valores[indice]
+        del seriais[indice]
+        del departamentos[indice]
+        break
+
+for indice in range(0, len(equipamentos)):
+    print("Equipamento..: ", equipamentos[indice])
+    print("Valor........: ", valores[indice])
+    print("Serial.......: ", seriais[indice])
+    print("Departamento.: ", departamentos[indice])
