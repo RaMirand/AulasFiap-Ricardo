@@ -1,3 +1,7 @@
+from platform import processor
+from re import I
+
+
 equipamentos = []
 valores = []
 seriais = []
@@ -26,5 +30,15 @@ for indice in range(0, len(equipamentos)):
         print("Valor........: ", valores[indice])
         print("Serial.......: ", seriais[indice])
         print("Departamento.: ", departamentos[indice])
+    else:
+        print("Não foi encontrado nenhum equipamento com este nome!")
+
+depreciacao = input("Digite o nome do equipamento a ser depreciado: ")
+porc = float(input("Qual a porcetagem de depreciação?: "))
+for indice in range(0, len(equipamentos)):
+    if depreciacao == equipamentos[indice]:
+        print("Valor antigo: ", valores[indice])
+        valores[indice] = valores[indice] * (1-porc/100)
+        print("Valor novo: ", valores[indice])
     else:
         print("Não foi encontrado nenhum equipamento com este nome!")
