@@ -1,3 +1,4 @@
+from operator import inv
 from funcoes import *
 
 inventario = [
@@ -22,3 +23,4 @@ if len(valores) > 0:
 
 busca(inventario)
 depreciar(inventario)
+excluir(inventario)

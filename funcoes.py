@@ -17,3 +17,15 @@ def depreciar(lista):
             elemento[1] = elemento[1] * (1-porc/100)
             elemento[1] = "{:.2f}".format(elemento[1])
             print("Novo valor: ", elemento[1])
+
+
+def excluir(lista):
+    serial = int(
+        input("Informe o serial do equipamento que deseja excluir da lista: "))
+    for elemento in lista:
+        if elemento[2] == serial:
+            lista.remove(elemento)
+    print(lista)
+
+# def informacoes(lista):
+#     #
