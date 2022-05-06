@@ -1,1 +1,3 @@
 Ricardo Miranda
+
+Olá nova linha teste no arquivo de texto.
